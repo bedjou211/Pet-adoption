@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Adoptez un ami fidèle - Accueil</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Adoptez un ami fidèle</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.php">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding: 110px;">
+
+       <section style="padding: 10px;" id="apropos">
+        <h2>À propos de moi</h2>
+
+        <ul>
+            <li>Nom : BEDJOU</li>
+            <li>Prénom : CELINA</li>
+            <li>N° Etudiant : 22112538</li>
+            <li>Groupe TP 3A</li>
+        </ul>
+
+       
+
+        <h2>À propos de mon site</h2>
+        
+        J'ai conçu un site web dédié à l'adoption de chats et de chiens. 
+        J'ai mis en place une interface d'administration qui permet d'ajouter,
+        de supprimer, de modifier et de visualiser des chiens ou des chats, 
+        ainsi que d'autres options que je détaillerai plus tard. Pour les 
+        utilisateurs, j'ai créé un formulaire de demande d'adoption et un moyen
+        de contacter les propriétaires d'animaux pour organiser une rencontre.
+        J'ai réussi à lier l'interface utilisateur à l'interface admin via un
+        système d'e-mails et j'ai laissé cette fonctionnalité dans le projet meme si ce n'est pas demander.
+        Le site fournit également des informations sur les animaux
+        disponibles pour adoption, y compris des photos et des descriptions
+        détaillées.
+        <strong> site est très simple et facile à manipuler. Il est entièrement réactif (résponsive 100%),  toutes les fonctionnalités, qu'elles soient de base ou supplémentaires, ont été intégrées.</strong>
+                    <h2>Liste des points réalisés</h2>
+            
+            <h1>1-Réalisation de base</h1>
+            <h3>Contenu de mes objets</h3>
+            <ul>
+                <li>IdP : identifiant unique de chaque animal (type : int)</li>
+                <li>Nom : nom de l'animal (type : varchar)</li>
+                <li>Espece : espèce à laquelle appartient l'animal (chien, chat) (type : varchar)</li>
+                <li>Race : race de l'animal (type : varchar)</li>
+                <li>Genre : genre de l'animal (mâle ou femelle) (type : varchar)</li>
+                <li>Age : âge de l'animal (type : int)</li>
+                <li>DateN : date de naissance de l'animal (type : date)</li>
+                <li>NumeroT : numéro de téléphone du propriétaire de l'animal (type : varchar)</li>
+                <li>Adresse : adresse du propriétaire de l'animal (type : varchar)</li>
+                <li>ImageContent : contenu de l'image de l'animal (stocké sous forme binaire) (type : blob)</li>
+                <li>ImageType : type de l'image de l'animal (jpeg, jpg) (type : varchar)</li>
+               
+            </ul>
+            <ul>
+                <li>Nom/Race/Age/NumeroT représenter par des inputs par contre Espece(chat,chiens)/Genre(male,femelle) par des balises select puis options .</li>
+
+                <li>Arborescence de mon site .</li>
+                <li><img style="width: 20%;height:10%;" src="../style/images/architecture2.png" alt="Ma superbe image">.</li>
+                <li>Liste d'animaux, affichables indépendamment avec une Possibilité de pagination.</li>
+                <li>Création d'animaux  => Bouton Ajouter un nouveau animal .</li>
+                <li>Modification d'animaux => Bouton Update</li>
+                <li>Utilisation d'une classe pour la manipulation d'animaux =>AnimalE.php</li>
+                <li>Suppression d'animaux => Bouton Delete</li>
+                <li>Visualisation des details de chaque animal avec une petite déscription + ses infos .</li>
+                <li>Gestion de la BD avec PHP => la table AnimalE</li>
+               
+            </ul>
+            <h1>2-Compléments</h1>
+            <ul>
+                <li>Filtrer la liste des animaux via un champ de recherche genre (soit féminin ou masculin) ou un champ de recherche espece(soit chat ou chien) ou filtrer selon  les deux ou meme  temps .</li>
+                <li>Modifier l'ordre d'affichage de la liste (tri par date, ou par nom)</li>
+                <li>Tri décroissant/croissant par nom et décroissant/croissant  par date  </li>
+                <li>pagination de la liste (ne montrer que 3 animaux par page)</li>
+                <li>Illustrer un animal en uploadant une image . 
+                </li>
+                <li>Une page qui contient Un formulaire de contact coté utilisateur pour contacter(envoyé un email avec php) <br>les responsables d'adoption + Une map pour localisé le lieu de cette associations ou refuges   .</li>
+                <li>Site web responsive avec @media screen(Toute les pages sont responsives)</li>
+                <li>3 page principale Accueil,A propos,Contact sans oublie les pages d'ajout/modification/suppression/visualisation</li>
+                <li>Réalisation des pages avec Html Css </li>
+            </ul>
+      
+
+        
+        <h1>3-Signaler</h1>
+        <ul>
+            <li>Pages Valides HTML</li>
+            <li>Documentation réaliser</li>
+        </ul>
+        <h1>4-Gestion des erreurs</h1>
+        <ul>
+            <li>Prévoir que l'internaute se trompe.</li>
+            <li>affichage Erreur nom ou race .... non valide.</li>
+            <li>Rajout de plusieurs fonctions dans Lib.php comme verifAgeValide(age),verifie_nom_prenom(nom/prenom/race),...ect</li>
+           
+            <li>Vérifier la validité de l'image si ce n'est pas .jpg ou .jpeg affichage  Erreur de chargement de fichier(format uniquement .jpeg .jpg)</li>
+            <li>Si le fichier télecharger a la place de l'image est .zip ou autre  Erreur de chargement de fichier</li>
+            
+            <li> une interface qui entraîne le moins d'erreurs possible</li>
+          
+        <li>    Explication précisément et clairement de erreur.</li>
+        <li>Possibilité de corriger ses erreurs</li>
+        </ul>
+
+       </section>
+       
+    </main>
+
+    <footer>
+        <h2 id="titre">Donnez une nouvelle vie à un ami fidèle</h2>
+        <p>© 2023 Adoptez un ami fidèle -BEDJOU CELINA </p>
+    </footer>
+</body>
+
+</html>
